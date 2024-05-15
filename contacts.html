@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./imgs/b-favicon.jpg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair Display"
+      rel="stylesheet"
+    />
+    <script src="./index.js"></script>
+    <title>Магазин Сноубордов</title>
+  </head>
+  <body>
+    <!-- first header start -->
+
+    <div class="header">
+      <div class="limiter">
+        <div class="headerLineContainer">
+          <div class="headerLineColumn">
+            <div id="geoPosition">
+              <ul>
+                <li style="list-style-type: none">
+                  <div class="user-geo-position">
+                    <div class="user-geo-position-label">Ваш город:</div>
+                    <div class="user-geo-position-value">
+                      <a href="#" class="user-geo-position-value-link">
+                        <button class="open-modal" id="open-modal">
+                          Астана
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="headerLineContainer">
+          <div class="headerLineColumn headerLineMenu">
+            <ul>
+              <li><a class="headerLineList" href="">Главная</a></li>
+            </ul>
+            <ul>
+              <li><a class="headerLineList" href="">Оплата</a></li>
+            </ul>
+            <ul>
+              <li><a class="headerLineList" href="">Доставка</a></li>
+            </ul>
+            <ul>
+              <li><a class="headerLineList" href="">Контакты</a></li>
+            </ul>
+            <ul>
+              <li>
+                <a class="headerLineList" href="./about.html">О магазине</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="headerLineContainer">
+          <div class="headerLineColumn">
+            <div id="idAuth">
+              <ul>
+                <li class="top-auth-login">
+                  <img
+                    style="filter: contrast(0); margin-right: 4px"
+                    src="./imgs/login-icon.png"
+                    alt=""
+                  />
+                  <a href="#" class="top-auth-login-link">Вход</a>
+                </li>
+                <li class="top-auth-register">
+                  <a href="#" class="top-auth-register-link">Регистрация</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first header end -->
+    <!-- second header start -->
+    <div class="subHeader">
+      <div class="subHeaderLineContainer">
+        <div class="linkwhatsapp">
+          <img
+            src="./imgs/whatsapp.png"
+            alt="whatsapp"
+            class="link-whatsapp-img"
+          />
+          <span>+7 777 150 10 10</span>
+        </div>
+        <div class="linkphone">
+          <img src="./imgs/call.png" alt="phone" class="link-phone-img" />
+          <span>+7 777 555 10 10</span>
+        </div>
+      </div>
+      <div style="width: 200px" class="subHeaderLineContainer">
+        <div class="container" id="logo">
+          <a href="/">
+            <img
+              src="./imgs/boardriders-high-resolution-logo-transparent.png"
+              alt="Интернет-магазин сноубордов"
+              class="logo"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="subHeaderLineContainer container">
+        <div class="timeTableText">
+          <p class="timeTableWord">Время работы</p>
+          <p class="timeTableNum">пн-вс:10:00-20:00</p>
+        </div>
+      </div>
+    </div>
+    <!-- second header end -->
+    <!-- last header start -->
+    <div class="wrapper">
+      <div class="limitHeader">
+        <div class="last-header">
+          <div
+            class="product product-tips"
+            onmouseover="showMenu()"
+            onmouseout="hideMenu()"
+          >
+            <a class="product-item" href="#"
+              >КАТАЛОГ&nbsp;ТОВАРОВ<img
+                class="angle"
+                src="./imgs/anglesmall.png.png"
+                alt="angle"
+            /></a>
+            <!-- submenu start -->
+            <div class="submenu" id="submenu">
+              <!-- Ваше всплывающее меню -->
+              <ul>
+                <li><a href="#">Кэмбер</a></li>
+                <li><a href="#">Флэт</a></li>
+                <li><a href="#">Рокер</a></li>
+                <li><a href="#">Гибрид</a></li>
+                <li><a href="#">Аксессуары</a></li>
+              </ul>
+            </div>
+            <!-- submenu end -->
+          </div>
+
+          <div class="product-tips">
+            <a href="#" class="product-item">Кэмбер</a>
+          </div>
+          <div class="product-tips">
+            <a href="#" class="product-item">Флэт</a>
+          </div>
+          <div class="product-tips">
+            <a href="#" class="product-item">Рокер</a>
+          </div>
+          <div class="product-tips">
+            <a href="#" class="product-item">Гибрид</a>
+          </div>
+          <div class="product-tips">
+            <a href="#" class="product-item">Аксессуары</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- last header end -->
+    <div class="main">
+      <div class="conta">
+        <div class="row">
+          <div class="column">
+            <img src="./imgs/call.png" alt="phone" /> +7 700 383 7777
+          </div>
+          <div class="column">
+            <img src="./imgs/email.png" alt="email" />
+            e-mail: info@sportidea.kz <br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="./imgs/map.png" alt="address" /> г. Алматы улица Сатпаева
+            20А, уг. ул. Сейфуллина "Sportidea.kz"
+          </div>
+          <div class="column">
+            <img src="./imgs/time.png" alt="hours" /> Пн-Вс : с 10:00 до 20:00
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer start -->
+    <div class="footer">
+      <div class="leftFooter">
+        <h2 class="h2-footer">Каталог</h2>
+        <a class="catalog" href="#">Кэмбер сноуборд</a>
+        <a class="catalog" href="#">Флэт сноуборд</a>
+        <a class="catalog" href="#">Рокер сноуборд</a>
+        <a class="catalog" href="#">Гибрид сноуборд</a>
+        <a class="catalog" href="#">Аксессуары</a>
+      </div>
+      <div class="columnFooter">
+        <h2 class="h2-footer">Помощь и сервисы</h2>
+        <a class="catalog" href="#">Премиум класс</a>
+        <a class="catalog" href="#">Новинки</a>
+        <a class="catalog" href="#">Популярные товары</a>
+        <a class="catalog" href="#">Рекомендуемые товары</a>
+      </div>
+      <div class="columnFooter">
+        <h2 class="h2-footer">Наши предложения</h2>
+        <a class="catalog" href="">Главная</a>
+        <a class="catalog" href="">Оплата</a>
+        <a class="catalog" href="">Доставка</a>
+        <a class="catalog" href="">Контакты</a>
+        <a class="catalog" href="">О магазине</a>
+      </div>
+      <div class="rightFooter">
+        <a href="/">
+          <img
+            src="./imgs/boardriders-high-resolution-logo-transparent.png"
+            alt="logo"
+            class="logo"
+            style="margin-bottom: 8px"
+          />
+        </a>
+        <div class="linkwhatsappFooter">
+          <img
+            src="./imgs/whatsapp.png"
+            alt="whatsapp"
+            class="link-whatsapp-img"
+          />
+          <span>+7 777 150 10 10</span>
+        </div>
+        <div class="linkphoneFooter">
+          <img src="./imgs/call.png" alt="phone" class="link-phone-img" />
+          <span>+7 777 555 10 10</span>
+        </div>
+        <span class="text-footer">Email:boardriders@mail.ru</span>
+        <a href="/" class="text-footer">г.Астана,ул.Сауран 10В</a>
+      </div>
+
+      <div class="lastColumnFooter">
+        <img style="width: 100px" src="./imgs/kaspi-rate.jpg" alt="kaspi" />
+        <a href="#"></a>
+        <a href="#"></a>
+        <span class="text-footer">Copyright 2023-2024 © Boardriders.kz</span>
+        <span class="text-footer">Заряжаем спортом!</span>
+      </div>
+    </div>
+    <!-- footer end -->
+  </body>
+</html>
